@@ -8,7 +8,7 @@ $classe = [
     [
         "nome" => "Mario",
         "cognome" => "Rossi",
-        $voti = [
+        "voti" => [
             "matematica" => 3,
             "storia" => 10,
             "inglese" => 7,
@@ -17,7 +17,7 @@ $classe = [
         [
             "nome" => "Luigi",
             "cognome" => "Verdi",
-            $voti = [
+            "voti" => [
                 "matematica" => 10,
                 "storia" => 2,
                 "inglese" => 5,
@@ -26,7 +26,7 @@ $classe = [
             [
                 "nome" => "Pippo",
                 "cognome" => "Pippo",
-                $voti = [
+                "voti" => [
                     "matematica" => 4,
                     "storia" => 4,
                     "inglese" => 8,
@@ -36,16 +36,19 @@ $classe = [
 
             ];
 
+            echo $classe[0]["voti"];
 
-for($i = 0 ; $i < count($classe) ; $i++){
-    echo "Nome Alunno: " . "   " . $classe[$i]["nome"] . " " . "/" . " ";
-    echo "Cognome Alunno: " . "   " . $classe[$i]["cognome"];
+            // for($j = 0 ; $j < count($classe[$j]["voti"]) ; $j++)
+          
 
-        for($j = 0 ; $j < count($classe[$voti]) ; $j++)
-            echo $classe[$j][$voti];
+// for($i = 0 ; $i < count($classe) ; $i++){
+//     echo "Nome Alunno: " . "   " . $classe[$i]["nome"] . " " . "/" . " ";
+//     echo "Cognome Alunno: " . "   " . $classe[$i]["cognome"];
 
-    echo "<br><br>";
-}
+        
+
+//     echo "<br><br>";
+// }
 
 
 ?>
