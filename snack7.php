@@ -36,19 +36,20 @@ $classe = [
 
             ];
 
-            echo $classe[0]["voti"];
-
-            // for($j = 0 ; $j < count($classe[$j]["voti"]) ; $j++)
+           
+            
           
 
-// for($i = 0 ; $i < count($classe) ; $i++){
-//     echo "Nome Alunno: " . "   " . $classe[$i]["nome"] . " " . "/" . " ";
-//     echo "Cognome Alunno: " . "   " . $classe[$i]["cognome"];
+for($i = 0 ; $i < count($classe) ; $i++){
+    echo "Nome Alunno: " . "   " . $classe[$i]["nome"] . " " . "/" . " ";
+    echo "Cognome Alunno: " . "   " . $classe[$i]["cognome"];
+    
+    $totale =  ($classe[$i]["voti"]["matematica"]+$classe[$i]["voti"]["storia"]+$classe[$i]["voti"]["inglese"])/3;
+    
+        echo " "  . " " . "Media dei voti arrotondata : " .  round($totale);
 
-        
-
-//     echo "<br><br>";
-// }
+    echo "<br><br>";
+}
 
 
 ?>
